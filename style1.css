@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 84vw;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    
+} 
+.header_cont{
+    margin-bottom: 2.2rem;
+}
+.header_title{
+    margin-bottom: 15px;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    text-align: center;
+}
+.header_desc{
+    max-width: 590px;
+    text-align: center;
+    color: rgb(104, 103, 103);
+    margin: 0 auto;
+}
+.main_cont{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1,1fr);
+}
+@media (min-width:450px){
+    .main_cont{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (min-width:850px){
+    .main_cont{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (min-width:1020px){
+    .main_cont{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+.card_cont{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(213, 203, 203);
+    border-radius: 8px;
+}
+.card_img_cont{
+    position: relative;
+    overflow: hidden;
+    height: 12rem;
+}
+
+.card1_img{
+    object-fit: cover;
+    object-position: center; 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.card_title_cont{
+    display: flex;
+    flex-direction: column;
+    padding: 1.1rem;
+}
+.card_cont:hover .card1_img{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+.card_title{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(23, 22, 22);
+    margin-top: 0rem;
+    margin-bottom: 0.2rem;
+}
+.card_title_anchor:hover .card_title{
+    color: rgb(61, 61, 227);
+}
+.card_desc{
+    color: rgb(41, 40, 40);
+    font-size: 0.9rem;
+}
+.card_footer_cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding:0 1.1rem;
+    padding-bottom: 0.8rem;
+}
+.author_cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.author_avatar_cont{
+    height: 2.4rem;
+    width: 2.5rem;
+    /* overflow: hidden; */
+    border: 1.2px solid rgb(112, 112, 112);
+    border-radius: 16px;
+    background-color: rgb(228, 214, 214);
+}
+.author_info_cont{
+    display: flex;
+    flex-direction: column;
+}
+.card_tag_cont{
+    font-size: 0.8rem;
+    border: 1px solid rgb(78, 76, 76);
+    border-radius: 3px;
+
+    padding: 0.25rem 0.20rem;
+    color: rgb(75, 74, 74);
+}

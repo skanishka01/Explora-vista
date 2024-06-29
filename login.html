@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <!-- Your styles or linked CSS file here -->
+    <style>
+
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: rgb(152, 151, 151);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 500px;
+    margin: 0 auto;
+    background:rgba(245, 245, 245, 0.463);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 15px 0;
+}
+
+label span {
+    font-size: 14px;
+    color: #555;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button.submit {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button.submit:hover {
+    background: #45a049;
+}
+.myform{
+background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20230614/pngtree-people-travelling-in-mountains-photo-image_3088019.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.no_account{
+    display: flex;
+
+}
+
+.success-message {
+            text-align: center;
+            color: green;
+            margin-top: 20px;
+        }
+
+        .redirect-button {
+            display: block;
+            width: 150px;
+            margin: 20px auto;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .redirect-button:hover {
+            background: #45a049;
+        }
+
+        .mylogo{
+            display: flex;
+        }
+        .mynav{
+            height: 40px;
+        }
+        .myfooter{
+            background-color: #042a57;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+
+            justify-content: space-between;
+        }
+       
+        .second ul{
+            display: flex;
+            flex-direction: column;
+        }
+        .third ul{
+            display: flex;
+            flex-direction: column;
+        }
+     
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Your header content here -->
+    <header class="uppernav">
+        <!-- Header content is the same as in index.html -->
+        <nav class="mynav">
+            <div class="logo">
+                <div class="mylogo">
+                    <a href="index.html" ><img src="explora (2).png" width="64px" height="55px" style="border-radius: 50px;" ></a>
+                    
+                    <h4 style="margin-top: 15px;">EXPLORA-VISTA</h4>
+                </div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="myform">
+        <br>
+
+        <h1>Welcome</h1>
+        <form action="login.php" method="post">
+            <label>
+                <span>Email</span>
+                <input type="email" name="email" required />
+            </label>
+            <label>
+                <span>Password</span>
+                <input type="password" name="password" required />
+            </label>
+            <button type="submit" class="submit">Log In</button>
+            <br><br>
+            <div class="no_account">
+    
+            <p>Don't have an account ?</p>
+            <a href="signup.html" style="font-size: larger; color:#042a57;">Sin Up</a>
+            </div>
+            
+        </form>
+        <br><br><br><br><br><br><br>
+    </div>
+    <footer class="myfooter">
+        <div class="container">
+            <div class="firstpart">
+               <img src="explora (2).png" height="100px" alt="">
+               <p style="font-size: 25px;">Explora-vista</p>
+           </div>
+           <div class="second">
+               <p style="font-size: 30px;">Menu</p>
+               <ul>
+                   <li style="font-size: 20px;"> <a href="about.html">About us</a></li>
+                   <li style="font-size: 20px;"><a href="B"></a> Booking</li>
+                   <li style="font-size: 20px;">login</li>
+               </ul>
+           </div>
+           <div class="third">
+               <p style="font-size: 30px;">Contact us</p>
+               <ul>
+                   <li style="font-size: 20px;">Email:- Exploravista@gmail.com</li>
+                   <li style="font-size: 20px;">Phone no:- 9876578989</li>
+                   <li style="font-size: 20px;">Insta id:- Exploravista</li>
+
+               </ul>
+           </div>
+           
+       </div>
+       <p>&copy; 2023 Travel Agency     </p>
+   </footer>
+</body>
+</html>

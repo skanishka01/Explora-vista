@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1433838552652-f9a46b332c40?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 500px;
+            margin: 40px auto;
+          
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.311);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group .btn {
+            width: 100%;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        header{
+           
+background-color: #FF3CAC;
+background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+
+
+
+        }
+        .mylogo{
+            display: flex;
+        }
+        .mynav{
+            height: 40px;
+        }
+
+        .myfooter{
+            background-color:#042a57;
+        }
+        .mycontainer{
+            display: flex;
+            flex-direction: row;
+
+            justify-content: space-around;
+        }
+       
+        .second ul{
+            display: flex;
+            flex-direction: column;
+        }
+        .third ul{
+            display: flex;
+            flex-direction: column;
+        }
+     
+
+    
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>booking form</title>
+</head>
+<body>
+    <header>
+        <!-- Header content is the same as in index.html -->
+        <nav class="mynav">
+            <div class="logo">
+                <div class="mylogo">
+                    <a href="index.html" ><img src="explora (2).png" width="64px" height="55px" style="border-radius: 50px;"  ></a>
+                    <h4 style="margin-top: 15px;">EXPLORA-VISTA</h4>
+                </div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br>
+    <div class="container">
+        <h2>Travel Information</h2>
+        <form action="process_booking.php" method="post">
+            <div class="form-group">
+                <label for="destination">Destination:</label>
+                <select id="destination" name="destination" >
+                    <option disabled selected value> -- select an option -- </option>
+                    <option value="Ladakh">Ladakh</option>
+                    <option value="Manali">Manali</option>
+                    <option value="Shimla">Shimla</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Haridwar">Haridwar</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="people">Number of People:</label>
+                <input type="number" id="people" name="people" required>
+            </div>
+            <div class="form-group">
+                <label for="arrivalDate">Arrival Date:</label>
+                <input type="date" id="arrivalDate" name="arrivalDate" required>
+            </div>
+            <div class="form-group">
+                <label for="leavingDate">Leaving Date:</label>
+                <input type="date" id="leavingDate" name="leavingDate" required>
+            </div>
+            <div class="form-group">
+                <label for="phn_no">Phone No:</label>
+                <input type="text" id="phn_no" name="phn_no" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+    <br><br>
+
+    <footer class="myfooter">
+    <br><br>       <div class="mycontainer">
+            <div class="firstpart">
+               <img src="explora (2).png" height="100px" alt="">
+               <p style="font-size: 25px;">Explora-vista</p>
+           </div>
+           <div class="second">
+               <p style="font-size: 30px;">Menu</p>
+               <ul>
+                   <li style="font-size: 20px;"> <a href="about.html">About us</a></li>
+                   <li style="font-size: 20px;"><a href="B"></a> Booking</li>
+                   <li style="font-size: 20px;">login</li>
+               </ul>
+           </div>
+           <div class="third">
+               <p style="font-size: 30px;">Contact us</p>
+               <ul>
+                   <li style="font-size: 20px;">Email:- Exploravista@gmail.com</li>
+                   <li style="font-size: 20px;">Phone no:- 9876578989</li>
+                   <li style="font-size: 20px;">Insta id:- Exploravista</li>
+
+               </ul>
+           </div>
+           
+       </div>
+       <br><br>
+       <p>&copy; 2023 Travel Agency     </p>
+       
+    </footer>
+</body>
+
+
+</html>
+
